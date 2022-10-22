@@ -22,23 +22,23 @@ export default function App() {
     {
       id: 0,
       color: "red",
-      isWorking: false
+      isWorking: false,
     },
     {
       id: 1,
       color: "blue",
-      isWorking: false
+      isWorking: false,
     },
     {
       id: 2,
       color: "green",
-      isWorking: false
+      isWorking: false,
     },
     {
       id: 3,
       color: "yellow",
-      isWorking: false
-    }
+      isWorking: false,
+    },
   ]);
 
   const ledInicial = generateRandomNumber();
@@ -75,6 +75,7 @@ export default function App() {
       // console.log("LED USED:");
       // console.log(secuence[ledUsed]);
       // setLedWorking(secuence[ledUsed]);
+      ///PRUEBA
     }, 1000);
   }, [ledWorking, indexLedUsed, iniciarJuego, secuence, ledInicial]);
 
@@ -90,23 +91,23 @@ export default function App() {
       {
         id: 0,
         color: "red",
-        isWorking: 0 === ledWorking
+        isWorking: 0 === ledWorking,
       },
       {
         id: 1,
         color: "blue",
-        isWorking: 1 === ledWorking
+        isWorking: 1 === ledWorking,
       },
       {
         id: 2,
         color: "green",
-        isWorking: 2 === ledWorking
+        isWorking: 2 === ledWorking,
       },
       {
         id: 3,
         color: "yellow",
-        isWorking: 3 === ledWorking
-      }
+        isWorking: 3 === ledWorking,
+      },
     ]);
 
     setTimeout(() => {
@@ -114,23 +115,23 @@ export default function App() {
         {
           id: 0,
           color: "red",
-          isWorking: false
+          isWorking: false,
         },
         {
           id: 1,
           color: "blue",
-          isWorking: false
+          isWorking: false,
         },
         {
           id: 2,
           color: "green",
-          isWorking: false
+          isWorking: false,
         },
         {
           id: 3,
           color: "yellow",
-          isWorking: false
-        }
+          isWorking: false,
+        },
       ]);
     }, 200);
   }, [ledWorking, iniciarJuego, indexLedUsed]);
